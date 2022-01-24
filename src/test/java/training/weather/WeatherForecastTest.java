@@ -1,6 +1,7 @@
 package training.weather;
 import java.io.IOException;
 import java.util.Date;
+
 import org.junit.Test;
 
 public class WeatherForecastTest {

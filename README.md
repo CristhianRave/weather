@@ -1,49 +1,33 @@
-# Introducción
 
-**WeatherForecast** es un ejercicio similar a la [Weather kata](https://github.com/CodiumTeam/weather-kata) de [Codium Team](https://www.codium.team).
+# Preguntas y respuestas
 
-Se trata de una clase con un método público que devuelve la previsión del tiempo de una ciudad en una fecha concreta.
-
-Para ello, esta clase utiliza una API externa (requiere conexión a internet): [www.metaweather.com](https://www.metaweather.com) 
-
-Ejemplo:
-
-```java
-WeatherForecast weatherForecast = new WeatherForecast();
-weatherForecast.getCityWeather("Madrid", new Date());
-```
-
-
-# Ejercicio
-
-El ejercicio consiste en **refactorizar** el código para hacerlo más **mantenible**, ya que el código existente, aunque **funciona**, es muy difícil de entender. 
-  
-Para ello se pueden realizar múltiples modificaciones siempre que se mantenga el API público. Ejemplos de modificaciones: incluir tests automáticos, extraer métodos, renombrar variables, modificar tipos de datos, crear nuevas clases, añadir librerías, etc. 
-
-
-# Documentación
-
-La solución debería contener un fichero README donde se respondan estas preguntas:
 - ¿Qué has empezado implementando y por qué?
+    * He comenzado organizando el codigo en funciones, 
+      porque he considerado que una vez dividido seria mas facil de ir organizando.
+
 - ¿Qué problemas te has encontrado al implementar los tests y cómo los has solventado?
+    * Aun no poseo conocimientos solidos en la elaboracion de test, pero ya me estoy formando en ello.
+
 - ¿Qué componentes has creado y por qué?
+    * He creado tres funciones y organizado las variables, 
+      las funciones hacen el programa sea modular y sus cambios o correcciones seran mas faciles de 
+      implementar, las variables con nombres descriptivos proporsionan una mejor lectura del codigo.
+
 - Si has utilizado dependencias externas, ¿por qué has escogido esas dependencias?
+    * No he incluido dependencias externas
+
 - ¿Has utilizado  streams, lambdas y optionals de Java 8? ¿Qué te parece la programación funcional?
+    * Me parece una forma de programar mas limpia y de mejor mantenimiento.
+
 - ¿Qué piensas del rendimiento de la aplicación? 
+    * El rendimiento es bueno.
+
 - ¿Qué harías para mejorar el rendimiento si esta aplicación fuera a recibir al menos 100 peticiones por segundo?
+    * Podriamos pedir al servidor solo los campos del json que realmente necesitamos.
+
 - ¿Cuánto tiempo has invertido para implementar la solución? 
+    * He invertido alrededor de 5 horas en refactorizar el codigo. 
+
 - ¿Crees que en un escenario real valdría la pena dedicar tiempo a realizar esta refactorización?
-
-
-# A tener en cuenta
-
-- Se valorará positivamente el uso de TDD, se revisarán los commits para comprobar su uso.
-- Se valorará positivamente la aplicación de los principios SOLID y "código limpio".
-- La aplicación ya tiene un API público: un método público que devuelve el tiempo en un String. No es necesario crear nuevas interfaces: REST, HTML, GraphQL, ni nada por el estilo.
-
-
-# Entrega
-
-La solución se puede subir a un repositorio de código público como [github](https://github.com/). 
-
-Otra opción sería comprimir la solución (incluyendo el directorio .git) en un fichero .zip/.tar.gz y enviarlo por email.
+    * En caso de uso real, y al ser una aplicacion relativamente sin mucha complejidad, 
+      considero mas adecuado hacer la aplicacion desde cero en lugar de refactorizarla.
